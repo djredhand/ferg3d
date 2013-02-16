@@ -75,7 +75,7 @@ td code {
         
     
     /* page & sidebar */
-    #page{width: 538px;}
+    #page{width: 100%;}
     #sidebar{width: 332px;}
 
     #page .one-two{width: 254px;}
@@ -225,7 +225,7 @@ td code {
     }
     
     /* page & sidebar */
-    #page.alignleft, #page.alignright{width: 418px;}
+    #page.alignleft, #page.alignright{width:100%;}
     #sidebar{width: 258px;}
 
 

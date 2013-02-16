@@ -169,7 +169,7 @@ a:hover{color: #fff;}
 }
 
 #content{
-    padding: 30px;
+    padding: 0 30px;
     background-color: #222222;
 }
 .width{width: 1170px;}
@@ -179,9 +179,13 @@ a:hover{color: #fff;}
 /*==================== HEADER =====================*/
 #header{
     margin: 0 auto;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     position: relative;
     background-color: #222222;
+}
+
+#block-block-13{
+    padding-bottom: 30px;
 }
 
     /*= logo =*/
@@ -348,6 +352,12 @@ background-color: #1E1E1E;
 	color: #E34B39;
 }
 .sf-menu.sf-style-designmd01 ul li:last-child{margin-bottom: 0 !important;}
+
+
+.maintop{
+    width: 900px;
+    margin: 0 auto;
+}
 
 /*==================== SLIDER =====================*/
 #slider{
@@ -794,7 +804,7 @@ html[xmlns] .slides {display: block;}
 
 
 /*==================== PAGE =====================*/
-#page{width: 686px;}
+#page{width: 100%;}
 .tab-page .latest-blog > div:nth-last-child(-n+2){margin-bottom: 0 !important;}
 .tab-page{padding-top: 5px;}
 
@@ -2197,10 +2207,7 @@ div.contextual-links-wrapper a, a.toggle {
 }
 
 .breadcrumbs {
-   
-    color: #8A8A8A;
-    font-size: 10px;
-   
+   display: none;
 }
 h2.block-title {
 	border-bottom: 1px dotted #373737;

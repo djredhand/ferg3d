@@ -1,3 +1,63 @@
+td, th {
+  padding: 4px 8px;
+  vertical-align: middle;
+}
+
+th a, th a:link, th a:visited {
+  text-decoration: none;
+}
+
+th a {
+  display: block;
+}
+
+th a img {
+  margin: 0 0 0 5px;
+}
+
+th.active {
+  background: #DDD;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+}
+
+/* Odd & Even Styles */
+tr.even td {
+  background: #F1F5FA;
+}
+
+tr.odd td {
+  background: #fff;
+}
+
+td.active {
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+}
+
+tr.even td.active {
+  background: #e5e9ed;
+}
+
+tr.odd td.active {
+  background: #f2f2f2;
+}
+
+tr:hover td,
+tr.even:hover td.active,
+tr.odd:hover td.active {
+  background: #FFFEEE;
+}
+
+td ul.links {
+  margin-bottom: 0;
+}
+
+td code {
+	border-style:none;
+	padding: 0;
+	}
+
 /* Beyond standard 960 */
 @media only screen and (min-width: 960px)  and (max-width: 1220px){
     
@@ -84,7 +144,6 @@
     .no-sidebar.portfolio2 li{width: 438px;}
     .no-sidebar.portfolio3 li{width: 284px;}
     .portfolio3.no-sidebar, .portfolio2.no-sidebar{width: 920px!important;}
-	
     
 }
 
@@ -276,8 +335,8 @@
         width: 408px;
         padding: 5px;
         margin: 0 auto;
-        background-color: #262626;
-        border: 1px solid #2B2B2B;
+        background-color: #f9f9f9;
+        border: 1px solid #f2f2f2;
     }
 
     
@@ -288,7 +347,7 @@
         border-right: none;
         margin-bottom: 30px;
         padding-bottom: 30px;
-        border-bottom: 1px dashed #303030;
+        border-bottom: 1px dashed #E5E5E5;
     }
     .features div.last{
         margin-bottom: 0;
@@ -368,7 +427,9 @@
     /* portfolio */
     .views-quicksand-container div.views-row.views-quicksand-tri, .views-quicksand-container div.views-row.views-quicksand-dva,
     .portfolio3.no-sidebar, .portfolio2.no-sidebar{width: 438px !important;}
-    
+    .views-quicksand-container div.views-row.views-quicksand, 
+    .views-quicksand-container div.views-row.views-quicksand-dva, 
+    .views-quicksand-container div.views-row.views-quicksand-tri,
     .no-sidebar.portfolio1 li, 
     .no-sidebar.portfolio2 li,
     .no-sidebar.portfolio3 li{width: 416px !important;}
@@ -540,6 +601,5 @@
 
     /* testimonial */
     #testimonial div.border-img { margin-bottom: 3px;}
-	
 
 }

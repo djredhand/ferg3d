@@ -185,9 +185,13 @@ a:hover{color: #292929;}
 /*==================== HEADER =====================*/
 #header{
     margin: 0 auto;
-    padding: 30px;
+    padding:30px 30px 0px 30px;
     position: relative;
       background-color: #fbfbfb;
+}
+
+#block-block-13{
+    padding-bottom: 30px;
 }
 
     /*= logo =*/
@@ -220,6 +224,9 @@ a:hover{color: #292929;}
     #social a.facebook{background:url(../images/social/facebook.png) center top;}
     #social a:hover{background-position:0 -45px;}
 
+    .breadcrumbs{
+        display: none;
+    }
     
     /*= menu =*/
     .res-menu{display: none;}
@@ -677,7 +684,7 @@ html[xmlns] .slides {display: block;}
 
 
 /*==================== PAGE =====================*/
-#page{width: 686px;}
+#page{width:100%;}
 .tab-page .latest-blog > div:nth-last-child(-n+2){margin-bottom: 0 !important;}
 .tab-page{padding-top: 5px;}
 
