@@ -21,14 +21,16 @@
                     margin      : 30            
                 });
             });
-
+			
+			
 })(jQuery);
 
 
 (function($) {
 	
 $(document).ready(function(){
-    
+    //add wrapper class to home page content
+	$('#block-block-17').addClass('wrapper');
     $('.features div:last, .newsletters div:last, .about-work > div:last, .team > div:last, .related-post > div:last').addClass('last');
     
     $('a[data-rel]').each(function() {
