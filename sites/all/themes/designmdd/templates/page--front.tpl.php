@@ -56,25 +56,31 @@
 <div id="content" class="wrapper">
  <?php if ($page['featured']): ?><div class="welcome"><?php print render($page['featured']); ?></div><?php endif; ?>
 
- <div class="divider"></div>
+ 
 
+
+<?php 
+//This is for the Blog front view
+if (isset($title) && $title !='Page not found' ):?>
+<div class="divider"></div>
 <div>
-
   <?php print render($title_prefix); ?>
         <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
         <?php print render($title_suffix); ?>
         <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
         <?php print render($page['help']); ?>
         <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-        <?php print render($page['content']); ?>
+        <?php //print render($page['content']); ?>
         <?php print $feed_icons; ?>
-        
         </div>
+        <div class="clear"></div>
+<div class="divider"></div>
+
+<?php endif;?>
+
         
         
  
-    <div class="clear"></div>
-    <div class="divider"></div>
 
  
     
