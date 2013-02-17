@@ -35,9 +35,6 @@ $(document).ready(function(){
         $(this).attr('rel', $(this).data('rel'));
     });
 
-
- 
-    
     //prettyPhoto
     $('a[rel^="prettyPhoto"]').prettyPhoto()
 
@@ -46,14 +43,13 @@ $(document).ready(function(){
     $('div.border-img a, .gallery li a').css({ opacity: 0 });
     $(".portfolio li, div.border-img:not(.not-hover)").hover(function () {						 
     	$(this).find("img").stop(true, true).animate({ opacity: 0.7 }, 300);
-        $(this).find("a.img-view").animate({left: 50+'%', marginLeft: -41+'px', opacity: 1}, 300, 'easeOutQuart');
+        //$(this).find("a.img-view").animate({left: 50+'%', marginLeft: -41+'px', opacity: 1}, 300, 'easeOutQuart');
         $(this).find("a.img-link").animate({right: 50+'%', marginRight: -41+'px', opacity: 1}, 300, 'easeOutQuart');
     }, function() {
     	$(this).find("img").stop(true, true).animate({ opacity: 1 }, 300);
-        $(this).find("a.img-view").animate({left: -36+'px', marginLeft: 0, opacity: 0 });
+        //$(this).find("a.img-view").animate({left: -36+'px', marginLeft: 0, opacity: 0 });
         $(this).find("a.img-link").animate({right:  -36+'px', marginRight: 0, opacity: 0 });
     });
-    
     
     //Portfolio Image Hover
     $("img.border-img:not(.not-hover)").hover(function () {						 
@@ -69,28 +65,22 @@ $(document).ready(function(){
     }, function() {
     	$(this).stop(true, true).animate({ opacity: 1 }, 800);
     });
-    //Portfolio Image Hover
-    $("img.border-img:not(.not-hover)").hover(function () {						 
-    	$(this).stop(true, true).animate({ opacity: 0.7 }, 800);
-    }, function() {
-    	$(this).stop(true, true).animate({ opacity: 1 }, 800);
-    });
 
     //Gallery Image Hover
     $(".gallery li").hover(function () {	
-        $(this).find("img").stop(true, true).animate({ opacity: 0.7 }, 300);
-    	$(this).find("a.img-view").animate({left: 50+'%', marginLeft: -18+'px', opacity: 1}, 300, 'easeOutQuart');
+        $(this).find("img").stop(true, true).animate({ opacity: 0.1 }, 300);
+    	$(this).find("a.img-view").css({opacity: 0}, 300, 'easeOutQuart');
     }, function() {
-    	$(this).find("a.img-view").animate({left: -36+'px', marginLeft: 0, opacity: 0 });
+    	$(this).find("a.img-view").css({ marginLeft: 0, opacity: 0 });
         $(this).find("img").stop(true, true).animate({ opacity: 1 }, 300);
     });
 	
 	//Portf Image Hover
     $("#isotope-container div.border-img").hover(function () {	
         $(this).find("img").stop(true, true).animate({ opacity: 0.7 }, 300);
-    	$(this).find("a.img-view").animate({left: 50+'%', marginLeft: -18+'px', opacity: 1}, 300, 'easeOutQuart');
+    	//$(this).find("a.img-view").animate({left: 50+'%', marginLeft: -18+'px', opacity: 1}, 300, 'easeOutQuart');
     }, function() {
-    	$(this).find("a.img-view").animate({left: -36+'px', marginLeft: 0, opacity: 0 });
+    	//$(this).find("a.img-view").animate({left: -36+'px', marginLeft: 0, opacity: 0 });
         $(this).find("img").stop(true, true).animate({ opacity: 1 }, 300);
     });
     
@@ -117,6 +107,7 @@ $(document).ready(function(){
     }, function() {
     	$(this).stop(true, true).animate({ opacity: 0.5 }, 800);
     });
+	
 	 //Tab
     $("div.tab-raz div").hover(function () {						 
     	$(this).find("img").stop(true, true).animate({ opacity: 0.6 }, 800);

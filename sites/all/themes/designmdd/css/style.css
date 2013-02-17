@@ -1389,8 +1389,10 @@ img{
     overflow: hidden;
 }
 .border-img:hover{ 
-    background-color: #181818;
-}
+    /*
+	background-color: #181818;
+	*/
+	}
 .border-img.alignleft{
     margin-right:20px !important;
     margin-bottom: 1px !important;
@@ -1409,8 +1411,6 @@ img{
     width: 36px;
     height: 36px;
     text-indent: -9999px;
-    top: 50%;
-    margin-top: -17px;
     -webkit-transition: none;
 	-moz-transition: none;
 	-o-transition: none;
@@ -1419,8 +1419,12 @@ img{
 
 }
 .border-img a.img-view{
-    left: -36px;
-    background: url('../images/view.png') no-repeat;
+    left: 0px;
+    /*background: url('../images/view.png') no-repeat;*/
+	background:#fff;
+	opacity:.3;
+	width:100%;
+	height:100%;
 }
 .border-img a.img-link{
     right: -36px;
