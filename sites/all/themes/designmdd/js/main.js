@@ -39,8 +39,8 @@ $(document).ready(function(){
  
     
     //prettyPhoto
-    $("a[rel^='prettyPhoto']").prettyPhoto();
-    
+    $('a[rel^="prettyPhoto"]').prettyPhoto()
+
     
     //Portfolio Image Hover
     $('div.border-img a, .gallery li a').css({ opacity: 0 });
