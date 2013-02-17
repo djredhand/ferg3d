@@ -115,3 +115,28 @@ if (isset($title) && $title !='Page not found' ):?>
              <div class="clear"></div>
         </div><!--END: #client logo-->
           <?php endif; ?>
+<script>
+
+jQuery(document).ready(function(){
+    var  frame_width = jQuery('#block-block-17').find('iframe').width();
+    var frame_height = frame_width * .667;
+    
+    jQuery(window).resize(function(){
+	frameResize();
+
+    });
+
+function frameResize(){
+	 var  frame_width = jQuery('#block-block-17').find('iframe').width();
+  	 var frame_height = frame_width * .667;
+
+	jQuery('#block-block-17').find('iframe').css({
+		height: frame_height + 'px'
+	})
+  }
+
+frameResize();
+
+})
+
+</script>
